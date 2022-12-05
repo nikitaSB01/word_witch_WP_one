@@ -111,7 +111,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.menu_item a {
+.menu__item a {
   font-family: "Roboto-Regular", sans-serif;
   font-size: 13px;
   line-height: 17px;
@@ -120,7 +120,7 @@ body {
   color: #989696;
   margin-right: 43px;
 }
-.menu_item:last-child a {
+.menu__item:last-child a {
   margin-right: 0px;
 }
 .active a {
@@ -129,10 +129,10 @@ body {
 .logo {
   margin: 0px 16px;
 }
-.header_content {
+.header__content {
   text-align: center;
 }
-.header_title {
+.header__title {
   font-family: "HelveticaNeueLTProLt", sans-serif;
   font-size: 44px;
   line-height: 41px;
@@ -141,7 +141,7 @@ body {
   color: #1d1e1f;
   margin: 207px auto 4px;
 }
-.header_text {
+.header__text {
   font-family: "Merriweather-LightItalic", serif;
   font-size: 16px;
   line-height: 17px;
@@ -151,7 +151,7 @@ body {
   color: #898888;
   margin: 0 auto 43px;
 }
-.header_button {
+.header__button {
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 13px;
   line-height: 17px;
@@ -185,14 +185,14 @@ body {
     url(../img/siti_black.png) center bottom repeat-x, #1d1d1d;
   /*background-size: contain, contain;*/
 }
-.about_inner {
+.about__inner {
   display: grid;
   grid-template-rows: max-content max-content;
   grid-template-columns: max-content max-content;
   grid-gap: 178px;
   place-content: center center;
 }
-.about_item {
+.about__item {
   width: 417px;
   height: 276px;
   background-color: #181818;
@@ -202,7 +202,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.about_year {
+.about__year {
   font-family: "HelveticaNeueLTProLt", sans-serif;
   font-size: 48px;
   font-weight: 400;
@@ -210,7 +210,7 @@ body {
   color: #fefefe;
   margin-bottom: 27px;
 }
-.about_text {
+.about__text {
   font-family: "Montserrat-Light", sans-serif;
   font-size: 15px;
   font-weight: 300;
