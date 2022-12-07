@@ -178,12 +178,11 @@ body {
 /*////////////////////////////////ШАПКА/////////////////////////////////*/
 .about {
   max-height: 1129px;
-  height: 100%;
   padding-top: 128px;
   padding-bottom: 271px;
   background: url(../img/siti_white.png) center bottom repeat-x,
     url(../img/siti_black.png) center bottom repeat-x, #1d1d1d;
-  /*background-size: contain, contain;*/
+  background-size: contain, contain;
 }
 .about__inner {
   display: grid;
@@ -220,3 +219,35 @@ body {
 }
 
 /*////////////////////////////////ABOUT/////////////////////////////////*/
+.team {
+  max-height: 745px;
+}
+.block__head {
+}
+.block__title {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1d1e1f;
+}
+.block__text {
+  font-family: "Merriweather-LightItalic", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #898888;
+}
+.team__inner {
+}
+.team__item {
+}
+.team__item-img {
+}
+.team__item-title {
+}
+.team__item-text {
+}
+.team__icon-box {
+}
