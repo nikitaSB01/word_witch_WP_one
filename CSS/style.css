@@ -64,7 +64,7 @@ img {
   vertical-align: top;
 }
 /*///////////////////////////////////////////////////////////////////////*/
-/*////////////////////////////////ШРИФТЫ/////////////////////////////////*/
+/*////////////////////////////////!ШРИФТЫ/////////////////////////////////*/
 @font-face {
   font-family: "HelveticaNeueLTProLt"; /* Имя шрифта */
   src: url(../fonts/HelveticaNeueLTProLt.otf) format(opentype); /* Путь к файлу со шрифтом */
@@ -118,6 +118,10 @@ body {
   letter-spacing: 0.04em;
   color: #989696;
   margin-right: 43px;
+  transition: 0.3s;
+}
+.menu__item a:hover {
+  color: #b00ab6;
 }
 .menu__item:last-child a {
   margin-right: 0px;
@@ -165,22 +169,15 @@ body {
   align-items: center;
   margin: 0px auto 206px;
 }
-/* ШРИФТЫ
-  font-family: "HelveticaNeueLTProLt", sans-serif;
-  font-family: "HelveticaNeueLTProMd", sans-serif;
-  font-family: "HelveticaNeueLTProRoman", sans-serif;
-  font-family: "Merriweather-LightItalic", sans-serif;
-  font-family: "Montserrat-Light", sans-serif;
-  font-family: "Montserrat-Regular", sans-serif;
-  font-family: "Roboto-Regular", sans-serif;
-*/
+
 /*////////////////////////////////ШАПКА/////////////////////////////////*/
+/*////////////////////////////////!ABOUT/////////////////////////////////*/
 .about {
-  max-height: 1129px;
+  height: 1129px;
   padding-top: 128px;
   padding-bottom: 271px;
   background: url(../img/siti_white.png) center 101% repeat-x,
-    url(../img/siti_black.png) center 101% repeat-x, #1d1d1d;
+    url(../img/black_2.png) center 101% repeat-x, #1d1d1d;
   /*background-size: contain, contain;*/
 }
 .about__inner {
@@ -218,6 +215,8 @@ body {
 }
 
 /*////////////////////////////////ABOUT/////////////////////////////////*/
+/*////////////////////////////////!team/////////////////////////////////*/
+
 .team {
   max-height: 745px;
   height: 100%;
@@ -277,11 +276,13 @@ body {
 .team__icon-box a :hover {
   color: #9d7d7d;
 }
-/*////////////////////////////////PROVADE/////////////////////////////////*/
+/*////////////////////////////////team/////////////////////////////////*/
+/*////////////////////////////////!PROVADE//////////////////////////////*/
 .provade {
-  max-height: 835px;
-  height: 100%;
+  min-height: 835px;
+  /*height: 100%;*/
   background-color: #1a0924;
+  padding-bottom: 155px;
 }
 /*.provade__container {
 }
@@ -335,35 +336,63 @@ body {
   letter-spacing: 0.02em;
   color: #383838;
 }
-/*////////////////////////////////contact/////////////////////////////////*/
+/*////////////////////////////////PROVADE//////////////////////////////*/
+/*////////////////////////////////!contact///////////////////////////////*/
 .contact {
   max-height: 1087px;
-  height: 100%;
-  background-color: rgb(129, 99, 99);
 }
 .contact__container {
+  background-color: rgb(255, 255, 255);
+  /*padding-bottom: 154px;*/
 }
-.block__head {
+.contact__container .block__head .block__title {
+  padding-top: 95px;
+  margin-bottom: 13px;
+}
+/*.block__head {
 }
 .block__title {
 }
 .block__text {
 }
 .contact__inner {
-}
+}*/
 .contact__icon-box {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 570px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 64px;
+  margin-bottom: 153px;
+}
+.cnb {
+  border: 1px solid #999999;
 }
 .contact__item {
+  text-align: center;
+  max-width: 130px;
+  width: 100%;
 }
-.icon-phone-1 {
+.contact__item i {
+  color: #323232;
+  font-size: 21px;
 }
 .contact-text {
+  margin-bottom: 12px;
 }
-.icon-location {
+.contact-text a {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #898888;
+  text-decoration: none;
+  transition: 0.3s;
 }
-.icon-mail-alt {
+.contact-text a:hover {
+  color: #cf7e7e;
+  text-decoration: underline;
 }
 .contact__form {
   display: flex;
@@ -371,22 +400,118 @@ body {
   max-width: 770px;
   margin: 0 auto;
 }
+.contact__form input {
+  height: 52px;
+  padding: 20px;
+  text-align: center;
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #898888;
+}
 .contact__name {
+  margin-bottom: 20px;
 }
 .contact__email {
+  margin-bottom: 20px;
 }
 .contact__number {
+  margin-bottom: 18px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 .contact__textarea {
+  padding: 22px;
+  margin-bottom: 21px;
+  height: 195px;
+  resize: none;
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #898888;
 }
-.contact__button {
+.contact__form .contact__button {
+  outline: none;
+  border: none;
+  font-family: "HelveticaNeueLTProMd", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #fefefe;
+  background-color: #161616;
 }
-/*////////////////////////////////footer/////////////////////////////////*/
+/*////////////////////////////////contact////////////////////////////////*/
+/*////////////////////////////////!footer////////////////////////////////*/
 
 .footer {
+  padding-top: 154px;
+  padding-bottom: 29px;
+  background-color: rgb(255, 255, 255);
 }
-.footer__container {
-}
+/*.footer__container {
+}*/
 .footer__text {
   text-align: center;
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #3b3b3b;
 }
+/*////////////////////////////////footer////////////////////////////////*/
+/*////////////////////////////////!MEDIA/////////////////////////////////*/
+@media screen and (max-width: 769px) {
+  .container {
+    max-width: 768px;
+  }
+  .about {
+    padding-bottom: 200px;
+    height: auto;
+  }
+  .about__inner {
+    grid-gap: 30px;
+    grid-template-columns: max-content;
+  }
+  .provade {
+    padding-bottom: 100px;
+  }
+  .team .block__title,
+  .provade .block__title {
+    padding-top: 100px;
+  }
+  .provade__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  .provade__item {
+    max-width: 300px;
+    margin-bottom: 20px;
+    margin: 0px 30px 40px;
+  }
+  .contact__icon-box {
+    padding-top: 60px;
+    margin-bottom: 80px;
+  }
+  .footer{
+    padding-top: 30px;
+  }
+}
+
+/* ШРИФТЫ
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-family: "HelveticaNeueLTProMd", sans-serif;
+  font-family: "HelveticaNeueLTProRoman", sans-serif;
+  font-family: "Merriweather-LightItalic", sans-serif;
+  font-family: "Montserrat-Light", sans-serif;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
+*/
