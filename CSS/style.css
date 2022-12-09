@@ -104,7 +104,9 @@ body {
   margin: 0px auto;
   /*border: 1px solid rgb(98, 49, 49);*/
 }
-/*.header {}*/
+.header {
+  display: none; /*header оставляет внизу стр пустое местоБ пожтому нужно прописать "display: none"*/
+}
 .menu {
   display: flex;
   justify-content: center;
@@ -501,7 +503,7 @@ input[type="number"] {
     padding-top: 60px;
     margin-bottom: 80px;
   }
-  .footer{
+  .footer {
     padding-top: 30px;
   }
 }
