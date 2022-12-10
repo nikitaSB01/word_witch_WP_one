@@ -104,9 +104,8 @@ body {
   margin: 0px auto;
   /*border: 1px solid rgb(98, 49, 49);*/
 }
-.header {
-  display: none; /*header оставляет внизу стр пустое местоБ пожтому нужно прописать "display: none"*/
-}
+/* .header {
+} */
 .menu {
   display: flex;
   justify-content: center;
@@ -128,6 +127,9 @@ body {
 .menu__item:last-child a {
   margin-right: 0px;
 }
+.menu__mobile {
+  display: none;
+}
 .active a {
   color: #010101;
 }
@@ -144,7 +146,8 @@ body {
   font-weight: 400;
   letter-spacing: 0.02em;
   color: #1d1e1f;
-  margin: 207px auto 4px;
+  padding-top: 207px;
+  margin-bottom: 4px;
 }
 .header__text {
   font-family: "Merriweather-LightItalic", serif;
@@ -220,8 +223,10 @@ body {
 /*////////////////////////////////!team/////////////////////////////////*/
 
 .team {
-  max-height: 745px;
-  height: 100%;
+  min-height: 745px;
+  
+  padding-top: 138px;
+  padding-bottom: 149px;
 }
 .block__head {
   text-align: center;
@@ -232,7 +237,6 @@ body {
   font-weight: 400;
   letter-spacing: 0.02em;
   color: #1d1e1f;
-  padding-top: 138px;
   margin-bottom: 13px;
 }
 .block__text {
@@ -246,7 +250,7 @@ body {
 .team__inner {
   display: flex;
   justify-content: space-around;
-  padding-top: 127px;
+  padding-top: 131px;
 }
 .team__item {
   text-align: center;
@@ -284,6 +288,7 @@ body {
   min-height: 835px;
   /*height: 100%;*/
   background-color: #1a0924;
+  padding-top: 176px;
   padding-bottom: 155px;
 }
 /*.provade__container {
@@ -293,7 +298,7 @@ body {
 .two {
 }*/
 .two .block__title {
-  padding-top: 176px;
+  
   margin-bottom: 5px;
   color: #ffffff;
 }
@@ -342,13 +347,14 @@ body {
 /*////////////////////////////////!contact///////////////////////////////*/
 .contact {
   max-height: 1087px;
+  padding-top: 95px;
 }
 .contact__container {
   background-color: rgb(255, 255, 255);
   /*padding-bottom: 154px;*/
 }
 .contact__container .block__head .block__title {
-  padding-top: 95px;
+  
   margin-bottom: 13px;
 }
 /*.block__head {
@@ -470,6 +476,7 @@ input[type="number"] {
 }
 /*////////////////////////////////footer////////////////////////////////*/
 /*////////////////////////////////!MEDIA/////////////////////////////////*/
+/*@media for iPad*/
 @media screen and (max-width: 769px) {
   .container {
     max-width: 768px;
@@ -483,12 +490,13 @@ input[type="number"] {
     grid-template-columns: max-content;
   }
   .provade {
+    padding-top: 100px;
     padding-bottom: 100px;
   }
-  .team .block__title,
+  /* .team .block__title,
   .provade .block__title {
     padding-top: 100px;
-  }
+  } */
   .provade__inner {
     flex-wrap: wrap;
     justify-content: center;
@@ -507,7 +515,80 @@ input[type="number"] {
     padding-top: 30px;
   }
 }
+/*@media for iPhone X*/
+@media screen and (max-width: 376px) {
+  /* body {
+    max-width: 375px;
+  } */
+  .container {
+    width: 375px;
+  }
+  .logo {
+    margin: 0px -15px;
+  }
+  .menu__dekstop {
+    display: none;
+  }
+  .menu__mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu {
+    display: none;
+  }
+  .menu__burger {
+    cursor: pointer;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    position: relative;
+  }
+  .menu__burger::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    bottom: -10px;
+  }
+  .menu__burger::before {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    top: -10px;
+  }
+  .header__title {
+    padding-top: 100px;
+    margin-bottom: 30px;
+  }
+  .header__button {
+    margin-bottom: 100px;
+  }
+  .about {
+    padding-top: 60px;
+  }
 
+  .about__item {
+    max-width: 340px;
+  }
+  .team {
+    height: auto;
+    padding-bottom: 80px;
+  }
+  .team__inner {
+    padding-top: 100px;
+    flex-wrap: wrap;
+  }
+  .team__item {
+    width: 340px;
+  }
+  .provade{
+    padding-top: 100px;
+  }
+}
 /* ШРИФТЫ
   font-family: "HelveticaNeueLTProLt", sans-serif;
   font-family: "HelveticaNeueLTProMd", sans-serif;
